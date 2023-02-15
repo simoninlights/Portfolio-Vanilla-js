@@ -127,7 +127,7 @@ body {
     padding: 40px 0;
     background-color: var(--dark-bg);
     color: var(--header-text);
-    background-image: url(./img/svg/bg-abstract.svg);
+    background-image: url(/img/svg/bg-abstract.svg);
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center center;
