@@ -123,7 +123,7 @@ body {
 /* Header */
 
 .header {
-    min-height: 695px;
+    max-height: 695px;
     padding: 40px 0;
     background-color: var(--dark-bg);
     color: var(--header-text);
