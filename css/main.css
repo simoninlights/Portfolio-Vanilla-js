@@ -123,11 +123,11 @@ body {
 /* Header */
 
 .header {
-    min-height: 695px;
+    min-height: 100vh;
     padding: 40px 0;
     background-color: var(--dark-bg);
     color: var(--header-text);
-    background-image: url(img/svg/bg-abstract.svg);
+    background-image: url(/img/svg/bg-abstract.svg);
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center center;
@@ -194,7 +194,7 @@ body {
 /* Projects */
 
 .section {
-    padding: 70px 0;
+    padding: 85px 0;
 }
 
 .container {}
@@ -485,6 +485,7 @@ body {
      /* General */
 
      .section {
+        max-height: 100vh;
         padding: 16px 0;
     }
 
