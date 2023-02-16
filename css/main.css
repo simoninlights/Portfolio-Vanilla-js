@@ -421,7 +421,7 @@ body {
     /* Header */
 
     .header {
-        max-height: 335px;
+        min-height: 335px;
     }
 
     .header__title {
@@ -458,7 +458,7 @@ body {
      /* General */
 
      .section {
-        padding: 16px 0;
+        padding: 45px 0;
     }
 
     .section .container {
