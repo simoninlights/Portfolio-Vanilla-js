@@ -420,7 +420,7 @@ body {
     /* Header */
 
     .header {
-        max-height: 335px;
+        min-height: 100%;
     }
 
     .header__title {
