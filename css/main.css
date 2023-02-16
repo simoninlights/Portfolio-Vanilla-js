@@ -335,11 +335,13 @@ body {
     font-size: 16px;
 }
 
+/*Mobile Layout*/
 @media (max-width: 620px) {
 
     /* Header */
 
     .header {
+        padding: 30px 0;
         min-height: unset;
     }
 
@@ -411,6 +413,7 @@ body {
     }
 }
 
+/* Landscape orientation*/
 @media  (max-width: 844px) and (max-height: 390px) {
 .nav {
     padding: 10px 0;
