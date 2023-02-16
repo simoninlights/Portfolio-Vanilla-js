@@ -335,14 +335,13 @@ body {
     font-size: 16px;
 }
 
-/*Mobile Layout*/
+/*Mobile*/
 @media (max-width: 620px) {
 
     /* Header */
 
     .header {
-        padding: 30px 0;
-        min-height: unset;
+        max-height: 100%;
     }
 
     .header__title {
@@ -421,7 +420,7 @@ body {
     /* Header */
 
     .header {
-        min-height: 335px;
+        max-height: 335px;
     }
 
     .header__title {
@@ -458,7 +457,7 @@ body {
      /* General */
 
      .section {
-        padding: 45px 0;
+        padding: 16px 0;
     }
 
     .section .container {
