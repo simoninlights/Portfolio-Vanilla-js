@@ -26,7 +26,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
-    max-height: 100vh;
+
 }
 
 .none {
@@ -199,7 +199,6 @@ body {
 /* Projects */
 
 .section {
-    max-height: 100vh;
     padding: 60px 0;
     flex: 1 0 auto;
 }
@@ -452,11 +451,9 @@ body {
         font-size: 20px;
     }
 
-    .container {
-        max-height: 100vh;
+    .nav-row {
         margin: -15px 0;
-    }
-
+       }
     /* Header */
 
     .header {}
@@ -487,7 +484,6 @@ body {
     /* General */
 
     .section {
-        max-height: 100vh;
         padding: 30px 0;
         flex: 1 0 auto;
     }
@@ -546,9 +542,8 @@ body {
         font-size: 20px;
     }
 
-    .container {
-        max-height: 100vh;
-        margin: -15px 0;
+    .nav-row {
+        margin: -35px 0;
     }
 
     /* Header */
@@ -591,7 +586,6 @@ body {
     /* General */
 
     .section {
-        max-height: 100vh;
         padding: 16px 0;
         flex: 1 0 auto;
     }
