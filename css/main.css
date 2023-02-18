@@ -392,6 +392,9 @@ body {
     .nav-button {
         display: block;
     }
+    .logo {
+        font-size: 20px;
+    }
 
     /* Header */
 
@@ -477,6 +480,9 @@ body {
     }
     .nav-button {
         display: block;
+    }
+    .logo {
+        font-size: 20px;
     }
 
     /* Header */
