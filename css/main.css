@@ -120,6 +120,10 @@ body {
     height: 2px;
 }
 
+.nav-button {
+    display: none;   
+}
+
 /* Header */
 
 .header {
@@ -364,7 +368,28 @@ body {
 }
 
 /*Mobile*/
+/*Getting rid of logo on the smallest mobile screen (Only hamburger)*/
+@media (max-width: 320px) {
+    .nav-list {
+        display: none;
+    }
+    .nav-row a {
+        display: none;
+    }
+    .nav-button {
+        display: block;
+    }
+
+}
+
 @media (max-width: 620px) {
+
+    .nav-list {
+        display: none;
+    }
+    .nav-button {
+        display: block;
+    }
 
     /* Header */
 
@@ -441,10 +466,17 @@ body {
 }
 
 /* Landscape orientation*/
-@media  (max-width: 844px) and (max-height: 390px) {
-.nav {
-    padding: 10px 0;
-}
+@media (max-width: 844px) and (max-height: 390px) {
+    .nav {
+        padding: 10px 0;
+    }
+    .nav-list {
+        display: none;
+    }
+    .nav-button {
+        display: block;
+    }
+
     /* Header */
 
     .header {
@@ -482,9 +514,9 @@ body {
         margin-bottom: 20px;
     }
 
-     /* General */
+    /* General */
 
-     .section {
+    .section {
         max-height: 100vh;
         padding: 16px 0;
     }
@@ -492,7 +524,7 @@ body {
     .section .container {
         max-height: 100vh;
     }
-    
+
     .title-1 {
         font-size: 25px;
         margin-bottom: 16px;
@@ -503,9 +535,9 @@ body {
         margin-bottom: 5px;
     }
 
-     /* Footer */
+    /* Footer */
 
-     .footer {
+    .footer {
         padding: 30px 0 20px;
     }
 
@@ -531,3 +563,39 @@ body {
         font-size: 16px;
     }
 }
+
+
+.line {
+    fill: none;
+    stroke: var(--accent);
+    stroke-width: 7;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+      stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .line1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 8;
+  }
+  .line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 8;
+  }
+  .line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 8;
+  }
+  .opened .line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 8;
+  }
+  .opened .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 8;
+  }
+  .opened .line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 8;
+  }
