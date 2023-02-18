@@ -26,6 +26,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+    max-height: 100vh;
 }
 
 .none {
@@ -121,7 +122,7 @@ body {
 }
 
 .nav-button {
-    display: none;   
+    display: none;
 }
 
 /* Header */
@@ -198,10 +199,10 @@ body {
 /* Projects */
 
 .section {
-    padding: 85px 0;
+    max-height: 100vh;
+    padding: 60px 0;
+    flex: 1 0 auto;
 }
-
-.container {}
 
 .projects {
     display: flex;
@@ -288,6 +289,11 @@ body {
     top: 0.7px;
 }
 
+.project-details img {
+    width: 100%;
+    max-width: 600px;
+}
+
 /* Content list */
 
 
@@ -317,7 +323,7 @@ body {
     background-color: var(--dark-bg);
     padding: 60px 0 50px;
     color: var(--header-text);
-    margin-top: auto;
+    flex: 0 0 auto;
 }
 
 .footer__wrapper {
@@ -367,15 +373,62 @@ body {
     fill: currentColor;
 }
 
+
+
+.line {
+    fill: none;
+    stroke: var(--accent);
+    stroke-width: 7;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+        stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 8;
+}
+
+.line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 8;
+}
+
+.line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 8;
+}
+
+.opened .line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 8;
+}
+
+.opened .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 8;
+}
+
+.opened .line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 8;
+}
+
+
 /*Mobile*/
+
 /*Getting rid of logo on the smallest mobile screen (Only hamburger)*/
 @media (max-width: 320px) {
     .nav-list {
         display: none;
     }
-    .nav-row a {
-        display: none;
+
+    .nav-row {
+        justify-content: flex-end;
     }
+
     .nav-button {
         display: block;
     }
@@ -386,24 +439,27 @@ body {
     .nav {
         padding: 0;
     }
+
     .nav-list {
         display: none;
     }
+
     .nav-button {
         display: block;
     }
+
     .logo {
         font-size: 20px;
     }
+
     .container {
+        max-height: 100vh;
         margin: -15px 0;
     }
 
     /* Header */
 
-    .header {
-        max-height: 100%;
-    }
+    .header {}
 
     .header__title {
         font-size: 20px;
@@ -431,7 +487,9 @@ body {
     /* General */
 
     .section {
+        max-height: 100vh;
         padding: 30px 0;
+        flex: 1 0 auto;
     }
 
     .title-1 {
@@ -448,6 +506,7 @@ body {
 
     .footer {
         padding: 30px 0 20px;
+        flex: 0 0 auto;
     }
 
     .footer__wrapper {
@@ -475,19 +534,20 @@ body {
 
 /* Landscape orientation*/
 @media (max-width: 844px) and (max-height: 390px) {
-    .nav {
-        padding: 0;
-    }
     .nav-list {
         display: none;
     }
+
     .nav-button {
         display: block;
     }
+
     .logo {
         font-size: 20px;
     }
+
     .container {
+        max-height: 100vh;
         margin: -15px 0;
     }
 
@@ -533,10 +593,7 @@ body {
     .section {
         max-height: 100vh;
         padding: 16px 0;
-    }
-
-    .section .container {
-        max-height: 100vh;
+        flex: 1 0 auto;
     }
 
     .title-1 {
@@ -553,6 +610,7 @@ body {
 
     .footer {
         padding: 30px 0 20px;
+        flex: 0 0 auto;
     }
 
     .footer__wrapper {
@@ -577,39 +635,3 @@ body {
         font-size: 16px;
     }
 }
-
-
-.line {
-    fill: none;
-    stroke: var(--accent);
-    stroke-width: 7;
-    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
-      stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .line1 {
-    stroke-dasharray: 60 207;
-    stroke-width: 8;
-  }
-  .line2 {
-    stroke-dasharray: 60 60;
-    stroke-width: 8;
-  }
-  .line3 {
-    stroke-dasharray: 60 207;
-    stroke-width: 8;
-  }
-  .opened .line1 {
-    stroke-dasharray: 90 207;
-    stroke-dashoffset: -134;
-    stroke-width: 8;
-  }
-  .opened .line2 {
-    stroke-dasharray: 1 60;
-    stroke-dashoffset: -30;
-    stroke-width: 8;
-  }
-  .opened .line3 {
-    stroke-dasharray: 90 207;
-    stroke-dashoffset: -134;
-    stroke-width: 8;
-  }
