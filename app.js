@@ -25,3 +25,13 @@ scrollBtn.addEventListener('click', () => {
 document.addEventListener('scroll', (e) => {
     refreshBtnVisibility();
 });
+
+/* Hamburger menu */
+
+const navBtn = document.querySelector('.nav-button');
+const nav= document.querySelector('.nav');
+
+navBtn.addEventListener('click', () => {
+    navBtn.classList.toggle('opened');
+    nav.classList.toggle('nav-opened');
+})
