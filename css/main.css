@@ -182,6 +182,7 @@ body {
 
 /*Animation for header background*/
 .header-bg .header-svg-abstract {
+  
     animation: bg-svg-rotation 7s infinite linear;
 }
 
@@ -445,11 +446,11 @@ body {
 /*Getting rid of logo on the smallest mobile screen (Only hamburger)*/
 @media (max-width: 320px) {
     .header {
-        min-height: 42vh;
+        /* min-height: 42vh; */
     }
 
     .header-svg-abstract {
-        display: none;
+        /* display: none; */
     }
 
     .nav-list {
@@ -468,11 +469,11 @@ body {
 
 @media (max-width: 620px) {
     .header {
-        min-height: 42vh;
+        /* min-height: 42vh; */
     }
 
     .header-svg-abstract {
-        display: none;
+        /* display: none; */
     }
 
     .nav-list {
