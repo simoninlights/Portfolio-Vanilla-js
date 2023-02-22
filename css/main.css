@@ -450,7 +450,7 @@ body {
     }
 
     .header-svg-abstract {
-        /* display: none; */
+        display: none;
     }
 
     .nav-list {
@@ -473,7 +473,7 @@ body {
     }
 
     .header-svg-abstract {
-        /* display: none; */
+        display: none;
     }
 
     .nav-list {
