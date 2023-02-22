@@ -181,7 +181,7 @@ body {
 }
 
 /*Animation for header background*/
-.header-bg svg  {
+.header-bg .header-svg-abstract  {
     animation: bg-svg-rotation 7s infinite linear;
 }
 @keyframes bg-svg-rotation {
@@ -441,6 +441,12 @@ body {
 
 /*Getting rid of logo on the smallest mobile screen (Only hamburger)*/
 @media (max-width: 320px) {
+    .header {
+        display: unset;
+    }
+    .header-svg-abstract {
+        display: none;
+    }
     .nav-list {
         display: none;
     }
@@ -456,7 +462,11 @@ body {
 }
 
 @media (max-width: 620px) {
-
+   
+    .header-svg-abstract {
+        width: 300px;
+        height: 300px;
+    }
     .nav-list {
         display: none;
     }
