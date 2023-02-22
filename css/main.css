@@ -181,17 +181,20 @@ body {
 }
 
 /*Animation for header background*/
-.header-bg .header-svg-abstract  {
+.header-bg .header-svg-abstract {
     animation: bg-svg-rotation 7s infinite linear;
 }
+
 @keyframes bg-svg-rotation {
     0% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
+
     100% {
-      transform: rotate(-90deg);
-    }    
-  }
+        transform: rotate(-90deg);
+    }
+}
+
 /*--------------------------------*/
 
 .btn {
@@ -442,11 +445,13 @@ body {
 /*Getting rid of logo on the smallest mobile screen (Only hamburger)*/
 @media (max-width: 320px) {
     .header {
-        display: unset;
+        min-height: 42vh;
     }
+
     .header-svg-abstract {
         display: none;
     }
+
     .nav-list {
         display: none;
     }
@@ -462,11 +467,14 @@ body {
 }
 
 @media (max-width: 620px) {
-   
-    .header-svg-abstract {
-        width: 300px;
-        height: 300px;
+    .header {
+        min-height: 42vh;
     }
+
+    .header-svg-abstract {
+        display: none;
+    }
+
     .nav-list {
         display: none;
     }
@@ -522,19 +530,19 @@ body {
         animation-name: hamburger-nav;
         animation-duration: 1.2s;
         animation-timing-function: ease, step-start, cubic-bezier(0.1, 0.7, 1, 0.1);
-        animation-fill-mode:backwards;
-        
+        animation-fill-mode: backwards;
+
     }
 
     @keyframes hamburger-nav {
         0% {
             transform: translateY(100px);
-            
+
         }
 
         100% {
             transform: translateY(0px);
-        
+
         }
     }
 
